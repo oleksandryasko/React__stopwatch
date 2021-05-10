@@ -1,13 +1,72 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-section {
+  height: 100vh;
+  background: antiquewhite;
+}
+
+.clock-holder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btns {
+  width: 100%;
+}
+
+.stopwatch {
+  /* border: 1px solid; */
+  padding: 120px 85px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 26px rgb(0 0 0 / 87%), 0 12px 34px rgb(0 0 0 / 54%);
+  background: mintcream;
+}
+
+span {
+  font-size: 35px;
+}
+
+.clock__time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.double__btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 11px 20px;
+  text-transform: uppercase;
+  box-shadow: 0 0px 6px rgb(0 0 0 / 14%), 0 2px 9px rgb(0 0 0 / 55%);
+  background: deepskyblue;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+button:hover {
+  box-shadow: 0 4px 31px rgb(0 0 0 / 4%), 0 2px 1px rgb(0 0 0 / 55%);
 }
